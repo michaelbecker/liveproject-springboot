@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  *
- * @author mike
+ * @author Mike
  */
 @Controller
-public class HomeController {
+public class CatalogController {
     
-    @GetMapping("/")
-    public String home() {
-        System.out.println("DEBUG - We hit home");
-        return "index";
+    @GetMapping("/catalog")
+    public String showCatalog() {
+        System.out.println("DEBUG - We're in showCatalog()");
+        return "catalog";
     }
     
 }
