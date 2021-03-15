@@ -14,6 +14,10 @@ and open the template in the editor.
         <h1>Cake Factory Catalog</h1>
         <h2>Milestone #2 - in Eclipse</h2>
         <p>This is a lit of the pastries available:</p>
-        <p>None yet...</p>
+        <ul>
+        {{#pastry}}
+        <li>{{description}} - &pound; {{price}}</li>
+        {{/pastry}}
+        </ul>
     </body>
 </html>
