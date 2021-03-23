@@ -26,16 +26,17 @@ public class CatalogController {
 	public CatalogController(PastryRepository pr) {
 		
 		pastryRepository = pr;
-		
+/*
 		pr.saveAll(List.of(	new Pastry("abcr", "All Butter Croissant", 0.75),
-							new Pastry("ccr", "Chocolate Croissant", 0.95),
-							new Pastry("b", "Fresh Baguette", 1.60),
-							new Pastry("rv", "Red Velvet", 3.95),
-							new Pastry("vs", "Victoria Sponge", 5.45),
-							new Pastry("cc", "Carrot Cake", 3.45)
+				new Pastry("ccr", "Chocolate Croissant", 0.95),
+				new Pastry("b", "Fresh Baguette", 1.60),
+				new Pastry("rv", "Red Velvet", 3.95),
+				new Pastry("vs", "Victoria Sponge", 5.45),
+				new Pastry("cc", "Carrot Cake", 3.45)
 				));
+*/	
+
 	}
-	
 	
     @GetMapping("/catalog")
     public String showCatalog(Model model) {

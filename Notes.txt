@@ -1,0 +1,37 @@
+----------------------
+Postgres notes
+----------------------
+
+https://hub.docker.com/_/postgres
+
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker exec -it postgres-container psql -U postgres
+Native connection: psql -U postgres -h 172.17.0.2
+docker ps
+docker inspect <name or id>
+
+
+
+
+https://stackoverflow.com/questions/56442400/manage-h2-and-postgres-in-same-pom-xml-in-spring-boot
+https://dzone.com/articles/bounty-spring-boot-and-postgresql-database
+
+
+
+
+----------------------
+Docker notes
+----------------------
+
+https://www.linuxjournal.com/content/search-gui-docker
+
+-- portman?
+http://localhost:9000/#/containers/f8b675ac6b5f527a040f963d06b8bb371d94753a83a3cf05c26b04e47df21248/exec
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+
+https://docs.docker.com/get-started/
+http://localhost/tutorial/our-application/
+docker run -d -p 80:80 docker/getting-started
+
+
+
