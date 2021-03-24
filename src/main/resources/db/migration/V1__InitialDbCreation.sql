@@ -2,17 +2,17 @@
 -- V1 - Initia Database creation and population.
 -------------------------------------------------------------------
 
-CREATE DATABASE pastry_repository;
+-- Flyway cannot create the initial DB.
+--CREATE DATABASE pastry_repository;
 
---USE pastry_repository;
 -- \connect to pastry_repository
-\c pastry_repository;
+--\c pastry_repository;
 
 
 CREATE TABLE pastry (
 	id CHAR(10) PRIMARY KEY,
 	description VARCHAR(100) NOT NULL,
-	price REAL NOT NULL
+	price DOUBLE PRECISION NOT NULL
 );
 
 
