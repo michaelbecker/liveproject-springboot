@@ -3,8 +3,9 @@ Milestone #2 notes
 - Start the Postgres docker instance.
 - Connect to it and create the Database.
 ------------------------------------------------------------------
+docker rm -f some-postgres
 docker run --name some-postgres -e POSTGRES_PASSWORD=pass123 -d postgres
-docker exec -it postgres-container psql -U postgres
+docker exec -it some-postgres psql -U postgres
 psql# CREATE DATABASE pastry_repository;
 
 

@@ -5,8 +5,6 @@
  */
 package com.cakefactory.storefront;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,10 +40,12 @@ public class CatalogController {
     public String showCatalog(Model model) {
 
     	// Debug bit...
+    	/*
         System.out.println("DEBUG - We're in showCatalog()");
         for (Pastry p : pastryRepository.findAll()) {
         	System.out.println("Found a " + p.toString());
         }
+        */
         
     	model.addAttribute("pastry", pastryRepository.findAll());
         

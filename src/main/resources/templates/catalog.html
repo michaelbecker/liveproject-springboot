@@ -14,10 +14,11 @@ and open the template in the editor.
         <h1>Cake Factory Catalog</h1>
         <h2>Milestone #2 - in Eclipse</h2>
         <p>This is a lit of the pastries available:</p>
-        <ul>
         {{#pastry}}
-        <li><b>{{description}} - &pound; {{price}}</b></li>
+        <form action="/basket" method="post">
+        	<b>{{description}} - &pound; {{price}}</b>
+        	<input type="submit" name="id" value="{{id}}" />
+        </form>
         {{/pastry}}
-        </ul>
     </body>
 </html>
